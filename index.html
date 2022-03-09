@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Courses</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="" class="mylogo" ><img src="final/logo.png"></a>
+            <div class="nav-items" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">COURSES</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">ABOUT US</a></li>
+                    
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="mainbox">
+            <h1>TRADING IS EASY</h1>
+            <p>
+                Lorem ipsum dolor sit amet
+                 consectetur adipisicing elit<br>
+                  Hic dolor veniam aperiam minima
+                   labore aliquid voluptas, quam dignissimos
+                    tempora voluptatem <br>accusantium. Necessitatibus 
+                    doloremque enim soluta harum, 
+                perspiciatis<br> omnis doloribus tempora?
+            </p>
+            <a href="" class="main-btn">Know More</a>
+        </div>
+    </header>
+    <!---------Our Services-->
+
+    <section class="our-services">
+        <h2 style="font-size:40px;padding:40px;">Our Services</h2>
+        <div class="services-row">
+            <div class="services-col">
+                
+                <img src="final/Master Fundamentals.jpg">
+                <div class="surface">
+                    <h3>Fundamental Analysis</h3>
+                </div>
+                <p>Lorem, ipsum 
+                vero assumenda ipsa <br>aliquid
+                 vel maxime debitis quis sapiente iusto.</p>
+            </div>
+            <div class="services-col">
+                
+                <img src="final/Analyzing Charts.jpg">
+                <div class="surface">
+                    <h3>Technical Analysis</h3>
+                </div>
+                <p>Lorem, ipsum 
+                vero assumenda ipsa <br>aliquid
+                 vel maxime debitis quis sapiente iusto.</p>
+            </div>
+            <div class="services-col">
+                
+                <img src="final/Derivatives Market.jpg">
+                <div class="surface">
+                   <h3>Derivatives</h3>
+                </div>
+                <p>Lorem, ipsum 
+                vero assumenda ipsa <br>aliquid
+                 vel maxime debitis quis sapiente iusto.</p>
+            </div>
+            <div class="services-col">
+              
+                <img src="final/bonds and Equity market.jpg">
+                <div class="surface">
+                     <h3>Bonds And Equity Markets</h3>
+                </div>
+                <p>Lorem, ipsum 
+                vero assumenda ipsa<br> aliquid
+                 vel maxime debitis quis sapiente iusto.</p>
+            </div>
+            <div class="services-col">
+                
+                <img src="final/Risk Management.jpg">
+                <div class="surface">
+                   <h3>Risk Management</h3>
+                </div>
+                <p>Lorem, ipsum 
+                vero assumenda ipsa <br>aliquid
+                 vel maxime debitis quis sapiente iusto.</p>
+            </div>
+        </div>
+    </section>
+    <script>
+        let navlink = document.getElementById("navLinks");
+        function showMenu(){
+            navlink.style.right="0";
+        }
+        function hideMenu(){
+            navlink.style.right ="-200px";
+        }
+    </script>
+</body>
+</html>
