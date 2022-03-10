@@ -118,7 +118,7 @@ nav .fa-bars{
 }
 @media(max-width:650px){
     .mainbox h1{
-        font-size: 25px;
+        font-size: 40px;
     }
     .nav-items ul li{
         display: block;
@@ -141,7 +141,7 @@ nav .fa-bars{
     nav .fa{
         display:block;
         color:#fff;
-        margin:15px;
+        margin:5px;
         font-size:22px;
         cursor:pointer;
     }
@@ -173,8 +173,9 @@ nav .fa-bars{
 }
 
 .services-col img{
-    width:450px;
-    border-radius: 10px;
+    width:425px;
+    
+    border-radius: 25px;
 }
 
 
@@ -182,8 +183,8 @@ nav .fa-bars{
     
     box-sizing: border-box;
     
-    border-radius: 10px;
-    margin:25px;
+    border-radius: 25px;
+    margin:15px;
     position: relative;
     overflow: hidden;
 }
@@ -194,8 +195,8 @@ nav .fa-bars{
 }
 
 .surface{
-    height:73%;
-    border-radius: 10px;
+    height:70%;
+    border-radius: 50px;
     width:100%;
     position:absolute;
     top:0;
@@ -203,7 +204,7 @@ nav .fa-bars{
 }
 
 .surface:hover{
-    background: rgba(170, 190, 195, 0.582);
+    background: rgba(64, 99, 105, 0.397);
 }
 .surface h3{
     width:100%;
@@ -221,5 +222,5 @@ nav .fa-bars{
 .surface:hover h3{
     bottom:49%;
     opacity:1;
-    box-shadow:50px 20px 50px rgba(11, 129, 144, 0.315);
+    box-shadow:50px 20px 50px rgba(82, 146, 155, 0.315);
 }
