@@ -127,6 +127,9 @@ nav .fa-bars{
         
     }
     .nav-items{
+        display:none;
+    }
+    .nav-items{
         position:fixed;
         background:rgba(75, 86, 187, 0.143);
         height:100vh;
@@ -142,9 +145,14 @@ nav .fa-bars{
         display:block;
         color:#fff;
         margin:5px;
+        position:fixed;
         font-size:22px;
         cursor:pointer;
     }
+    nav .fa-bars{
+        right:0;
+    }
+    
     .nav-items ul{
         padding-right: 40px;
         
@@ -161,21 +169,28 @@ nav .fa-bars{
     width:100%;
     text-align: center;
     padding-top: 50px;
+    background: linear-gradient(rgba(250, 2, 2, 0.7),rgba(0, 0, 0, 0.7)),url(final/blackandred.jpg);
+    background-position: center;
 }
 
 .services-row{
     display:flex;
+    
     flex-flow: wrap;
     justify-content: space-between;
     padding-left: 25px;
     padding-right: 25px;
     
 }
+@media(max-width:650px){
+    .services-row{
+        display:-moz-grid-line;
+    }
+}
 
 .services-col img{
     width:425px;
-    
-    border-radius: 25px;
+    border-radius: 5px;
 }
 
 
@@ -183,7 +198,7 @@ nav .fa-bars{
     
     box-sizing: border-box;
     
-    border-radius: 25px;
+    border-radius: 5px;
     margin:15px;
     position: relative;
     overflow: hidden;
@@ -191,25 +206,26 @@ nav .fa-bars{
 .services-col p{
     padding:0;
     margin:25px;
+    color:white;
     
 }
 
+
 .surface{
     height:70%;
-    border-radius: 50px;
+  
+    border-radius: 5px;
     width:100%;
     position:absolute;
     top:0;
     left:0;
 }
 
-.surface:hover{
-    background: rgba(64, 99, 105, 0.397);
-}
+
 .surface h3{
     width:100%;
-    font-weight: 200;
-    color:rgb(255, 255, 255);
+    font-weight: 600;
+    color:rgb(243, 149, 9);
     font-size: 33px;
     bottom:0;
     left:50%;
@@ -222,5 +238,84 @@ nav .fa-bars{
 .surface:hover h3{
     bottom:49%;
     opacity:1;
-    box-shadow:50px 20px 50px rgba(82, 146, 155, 0.315);
+    box-shadow:50px 20px 50px rgba(175, 18, 10, 0.315);
+}
+
+/* This section is focused on building WhatWeOffer section */
+/*WhatWeOffer */
+
+.Whatweoffer{
+    width:100%;
+    text-align: center;
+    padding-top: 50px;
+    background: linear-gradient(rgba(238, 27, 24, 0.652),rgb(8, 0, 0)),url(final/RedBackground.jpg);
+    background-position: center;
+   padding-bottom: 25px;
+  
+}
+.rows{
+    color:white;                 /* using width to make the table stay in the middle */
+    width:55%;
+    display:inline-table;
+   
+    box-shadow: 1px 1px 15px 1px rgb(249, 243, 243);
+    text-align: center;
+    margin:50px;
+    box-sizing: border-box;
+    
+    
+    
+   
+}
+.rows h2{
+    margin:5px;
+    padding:10px;
+    display:flex;
+    justify-content: center;
+    
+}
+.rows p{
+    margin:10px;
+    padding:2px;
+    display:flex;
+    justify-content: center;
+    
+}
+.rows img{
+    width:200px;
+}
+
+/* This section is concerned with certification example*/
+.certification{
+    width:100%;
+    text-align: center;
+    padding-top: 50px;
+    background: linear-gradient(rgba(27, 30, 88, 0.652),rgb(8, 0, 0)),url(final/Certificationbackground.jpg);
+    background-position: center;
+    padding-bottom: 25px;
+}
+.certification-area{
+    width:80%;
+    display:inline;
+    
+    margin:25px;
+}
+.certification-area img{
+    width:30%;
+   
+}
+.certification-area h2{
+    color:white;
+    margin:15px;
+    padding:20px;
+}
+.certification-area p{
+    color:white;
+    margin:10px;
+    padding:20px;
+}
+@media(max-width:650px){
+    .certification-area img{
+        width:300px;
+    }
 }
